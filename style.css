@@ -4,15 +4,10 @@
     box-sizing: border-box;
 }
 
-
 body {
-
     min-height: 100vh;
-
     font-family: Arial, sans-serif;
-
     color: white;
-
     overflow-x: hidden;
 
     background:
@@ -30,17 +25,13 @@ body {
 }
 
 
-
 /* SCREEN */
 
 .screen {
-
     min-height: 100vh;
 
     display: flex;
-
     justify-content: center;
-
     align-items: center;
 
     padding: 25px;
@@ -48,19 +39,15 @@ body {
     text-align: center;
 }
 
-
 .hidden {
     display: none !important;
 }
 
 
-
 /* CARD */
 
 .card {
-
     width: 100%;
-
     max-width: 650px;
 
     padding: 35px 25px;
@@ -80,26 +67,19 @@ body {
         0 25px 80px
         rgba(0,0,0,0.45);
 
-    animation:
-        screenIn 0.8s ease;
+    animation: screenIn 0.8s ease;
 }
-
 
 .final-card {
-
     max-width: 700px;
 }
-
 
 
 /* IMAGE */
 
 .image-box {
-
     width: 100%;
-
     max-width: 430px;
-
     height: 420px;
 
     margin:
@@ -118,11 +98,8 @@ body {
         rgba(0,0,0,0.5);
 }
 
-
 .image-box img {
-
     width: 100%;
-
     height: 100%;
 
     object-fit: cover;
@@ -133,29 +110,20 @@ body {
         transform 0.6s ease;
 }
 
-
 .image-box:hover img {
-
-    transform:
-        scale(1.06);
+    transform: scale(1.06);
 }
-
 
 
 /* TEXT */
 
 .mini-title {
-
     font-size: 15px;
-
     letter-spacing: 4px;
-
     color: #ffc3e2;
 }
 
-
 h1 {
-
     font-size:
         clamp(42px, 9vw, 75px);
 
@@ -173,15 +141,9 @@ h1 {
     -webkit-background-clip: text;
 
     color: transparent;
-
-    text-shadow:
-        0 0 30px
-        rgba(255,100,190,0.5);
 }
 
-
 h2 {
-
     font-size: 30px;
 
     margin-bottom: 20px;
@@ -189,9 +151,7 @@ h2 {
     color: #ffb7dc;
 }
 
-
 p {
-
     font-size: 19px;
 
     line-height: 1.7;
@@ -201,23 +161,16 @@ p {
     color: #ffeaf5;
 }
 
-
 .small {
-
     font-size: 16px;
-
     opacity: 0.8;
 }
 
-
 .funny-text {
-
     color: #ffd0e8;
 }
 
-
 .love-text {
-
     color: #ff9dcc;
 
     font-size: 22px;
@@ -228,11 +181,9 @@ p {
 }
 
 
-
-/* EMOJIS */
+/* EMOJI */
 
 .emoji {
-
     font-size: 65px;
 
     margin: 10px 0;
@@ -241,9 +192,7 @@ p {
         bounce 1.4s infinite;
 }
 
-
 .cake {
-
     font-size: 85px;
 
     margin: 10px;
@@ -252,9 +201,7 @@ p {
         bounce 1.4s infinite;
 }
 
-
 .big-heart {
-
     font-size: 100px;
 
     animation:
@@ -262,11 +209,9 @@ p {
 }
 
 
-
 /* BUTTON */
 
 button {
-
     margin-top: 28px;
 
     padding:
@@ -299,11 +244,8 @@ button {
         all 0.3s ease;
 }
 
-
 button:hover {
-
-    transform:
-        scale(1.08);
+    transform: scale(1.08);
 
     box-shadow:
         0 0 45px
@@ -311,23 +253,19 @@ button:hover {
 }
 
 
-
 /* FINAL */
 
 .final-message {
-
     font-size: 30px;
 
     font-weight: bold;
 
-    color: #ffffff;
+    color: white;
 
     margin-top: 25px;
 }
 
-
 .signature {
-
     margin-top: 30px;
 
     font-size: 17px;
@@ -338,29 +276,24 @@ button:hover {
 }
 
 
-
 /* ANIMATIONS */
 
 @keyframes screenIn {
 
     from {
-
         opacity: 0;
 
         transform:
             translateY(40px)
             scale(0.94);
-
     }
 
     to {
-
         opacity: 1;
 
         transform:
             translateY(0)
             scale(1);
-
     }
 }
 
@@ -368,17 +301,13 @@ button:hover {
 @keyframes bounce {
 
     0%, 100% {
-
         transform:
             translateY(0);
-
     }
 
     50% {
-
         transform:
             translateY(-12px);
-
     }
 }
 
@@ -386,17 +315,13 @@ button:hover {
 @keyframes heartbeat {
 
     0%, 100% {
-
         transform:
             scale(1);
-
     }
 
     50% {
-
         transform:
             scale(1.25);
-
     }
 }
 
@@ -404,26 +329,21 @@ button:hover {
 @keyframes floatUp {
 
     0% {
-
         transform:
             translateY(0)
             rotate(0deg);
 
         opacity: 1;
-
     }
 
     100% {
-
         transform:
             translateY(-110vh)
             rotate(360deg);
 
         opacity: 0;
-
     }
 }
-
 
 
 /* MOBILE */
@@ -431,48 +351,30 @@ button:hover {
 @media(max-width:600px) {
 
     .card {
-
         padding:
             30px 18px;
-
     }
-
 
     .image-box {
-
         height: 330px;
-
     }
-
 
     h2 {
-
         font-size: 25px;
-
     }
-
 
     p {
-
         font-size: 17px;
-
     }
-
 
     .love-text {
-
         font-size: 19px;
-
     }
 
-
     button {
-
         font-size: 15px;
 
         padding:
             14px 22px;
-
     }
-
 }
