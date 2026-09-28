@@ -2,10 +2,14 @@ const music =
     document.getElementById("bgMusic");
 
 
-function nextScreen(number) {
+
+/* CHANGE SCREEN */
+
+function goTo(number) {
 
     const screens =
         document.querySelectorAll(".screen");
+
 
     screens.forEach(screen => {
 
@@ -14,76 +18,110 @@ function nextScreen(number) {
     });
 
 
-    const next =
+    const nextScreen =
         document.getElementById(
             "screen" + number
         );
 
-    next.classList.remove("hidden");
+
+    nextScreen.classList.remove(
+        "hidden"
+    );
+
 
     window.scrollTo({
         top: 0,
         behavior: "smooth"
     });
+
+
+    createHearts(8);
 }
 
 
 
-function startBirthday() {
+/* FINAL SURPRISE */
+
+function finalSurprise() {
 
     music.play().catch(() => {
         console.log(
-            "Music could not autoplay."
+            "Music requires user interaction."
         );
     });
 
 
-    nextScreen(4);
+    goTo(5);
 
-    createHearts();
 
-    setInterval(
-        createHeart,
-        700
-    );
+    createHearts(35);
+
+
+    setTimeout(() => {
+
+        createHearts(25);
+
+    }, 2000);
+
 }
 
 
+
+/* CREATE HEART */
 
 function createHeart() {
 
     const heart =
         document.createElement("div");
 
+
+    const emojis = [
+        "❤️",
+        "💕",
+        "💖",
+        "💗",
+        "💓",
+        "✨"
+    ];
+
+
     heart.innerHTML =
-        ["❤️", "💕", "💖", "💗", "✨"]
-        [
+        emojis[
             Math.floor(
-                Math.random() * 5
+                Math.random() *
+                emojis.length
             )
         ];
+
 
     heart.style.position =
         "fixed";
 
+
     heart.style.left =
         Math.random() * 100 + "vw";
 
+
     heart.style.bottom =
         "-30px";
+
 
     heart.style.fontSize =
         (Math.random() * 20 + 15)
         + "px";
 
+
     heart.style.zIndex =
-        "1000";
+        "9999";
+
 
     heart.style.pointerEvents =
         "none";
 
+
     heart.style.animation =
         "floatUp 4s linear forwards";
+
 
     document.body.appendChild(
         heart
@@ -95,22 +133,26 @@ function createHeart() {
         heart.remove();
 
     }, 4000);
+
 }
 
 
 
-function createHearts() {
+/* MANY HEARTS */
+
+function createHearts(number) {
 
     for (
         let i = 0;
-        i < 25;
+        i < number;
         i++
     ) {
 
         setTimeout(
             createHeart,
-            i * 100
+            i * 80
         );
 
     }
+
 }
