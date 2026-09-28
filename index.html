@@ -2,53 +2,52 @@
 <html lang="en">
 
 <head>
-
     <meta charset="UTF-8">
-
-    <meta name="viewport"
-          content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <title>Happy Birthday Sagufta Apu ❤️</title>
 
     <link rel="stylesheet" href="style.css">
-
 </head>
-
 
 <body>
 
     <!-- Background Music -->
-
     <audio id="bgMusic" loop>
         <source src="music/birthday.mp3" type="audio/mpeg">
     </audio>
 
 
     <!-- Floating Hearts -->
-
     <div id="hearts"></div>
 
 
-    <!-- SCREEN 1 -->
+    <!-- ================= SCREEN 1 ================= -->
 
-    <section class="screen intro" id="screen1">
+    <section class="screen" id="screen1">
 
         <div class="card">
 
             <div class="emoji">🤨</div>
 
-            <h1>WAIT!</h1>
+            <p class="mini-title">
+                WAIT... WAIT... WAIT...
+            </p>
+
+            <h1>STOP! 😂</h1>
 
             <p>
-                This website is NOT for you...
+                This website is definitely NOT for you.
             </p>
 
             <p class="small">
-                ...unless your name is Sagufta Apu 😂
+                Unless your name is...
             </p>
 
-            <button onclick="nextScreen(2)">
-                Who is this for? 👀
+            <h2>Sagufta Apu 👀</h2>
+
+            <button onclick="goTo(2)">
+                Find Out 👀
             </button>
 
         </div>
@@ -57,32 +56,43 @@
 
 
 
-    <!-- SCREEN 2 -->
+    <!-- ================= SCREEN 2 ================= -->
 
-    <section class="screen funny hidden" id="screen2">
+    <section class="screen hidden" id="screen2">
 
         <div class="card">
+
+            <div class="image-box">
+
+                <img
+                    src="images/photo1.jpg"
+                    alt="Sagufta Apu">
+
+            </div>
 
             <div class="emoji">😂👑</div>
 
-            <h1>YES, YOU!</h1>
+            <h1>
+                GOTCHA!
+            </h1>
 
             <p>
-                The family boss has officially arrived.
+                Yes Apu... this whole website
+                is actually for YOU! 😂
             </p>
 
             <p>
-                The person who gives advice...
-                even when nobody asked. 😂
+                Because apparently one normal
+                birthday wish wasn't enough.
             </p>
 
-            <p>
-                The person who can be sweet,
-                scary and caring at the same time.
+            <p class="funny-text">
+                After all, you are the
+                <b>Family Boss 👑</b>
             </p>
 
-            <button onclick="nextScreen(3)">
-                Okay okay... Continue 😌
+            <button onclick="goTo(3)">
+                Okay, Continue 😌
             </button>
 
         </div>
@@ -91,13 +101,70 @@
 
 
 
-    <!-- SCREEN 3 -->
+    <!-- ================= SCREEN 3 ================= -->
 
-    <section class="screen birthday hidden" id="screen3">
+    <section class="screen hidden" id="screen3">
 
         <div class="card">
 
-            <div class="cake">🎂</div>
+            <div class="image-box">
+
+                <img
+                    src="images/photo2.jpg"
+                    alt="Sagufta Apu">
+
+            </div>
+
+            <div class="emoji">
+                🥹❤️
+            </div>
+
+            <h1>
+                Jokes Apart...
+            </h1>
+
+            <p>
+                Behind all the teasing,
+                arguments and random fights...
+            </p>
+
+            <p>
+                You are someone who makes
+                our family feel complete.
+            </p>
+
+            <p class="love-text">
+                Having a sister like you
+                is genuinely special. ❤️
+            </p>
+
+            <button onclick="goTo(4)">
+                One More Click ❤️
+            </button>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- ================= SCREEN 4 ================= -->
+
+    <section class="screen hidden" id="screen4">
+
+        <div class="card">
+
+            <div class="image-box">
+
+                <img
+                    src="images/photo3.jpg"
+                    alt="Sagufta Apu">
+
+            </div>
+
+            <div class="cake">
+                🎂
+            </div>
 
             <h1>
                 HAPPY BIRTHDAY
@@ -108,117 +175,23 @@
             </h2>
 
             <p>
-                Today, the family officially celebrates
-                the legendary sister! 👑
+                May Allah bless you with
+                happiness, peace, good health
+                and success.
             </p>
-
-            <button onclick="startBirthday()">
-                🎁 Open Your Birthday Surprise
-            </button>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- SCREEN 4 -->
-
-    <section class="screen memories hidden" id="screen4">
-
-        <div class="card wide">
-
-            <h1>
-                Our Little Memories 📸
-            </h1>
 
             <p>
-                Some moments are too precious
-                to explain with words.
+                May every new year of your life
+                bring you more beautiful moments.
             </p>
 
+            <p class="love-text">
+                Keep smiling.
+                Keep shining.
+                Keep being YOU. ❤️
+            </p>
 
-            <div class="gallery">
-
-                <img src="images/photo1.jpg"
-                     alt="Sagufta Apu">
-
-                <img src="images/photo2.jpg"
-                     alt="Sagufta Apu">
-
-                <img src="images/photo3.jpg"
-                     alt="Sagufta Apu">
-
-                <img src="images/photo4.jpg"
-                     alt="Sagufta Apu">
-
-            </div>
-
-
-            <button onclick="nextScreen(5)">
-                One Last Thing ❤️
-            </button>
-
-        </div>
-
-    </section>
-
-
-
-    <!-- SCREEN 5 -->
-
-    <section class="screen emotional hidden" id="screen5">
-
-        <div class="card">
-
-            <div class="emoji">❤️</div>
-
-            <h1>
-                Dear Sagufta Apu...
-            </h1>
-
-            <div class="message">
-
-                <p>
-                    We may fight.
-                </p>
-
-                <p>
-                    We may annoy each other.
-                </p>
-
-                <p>
-                    And yes...
-                    sometimes you are REALLY annoying. 😂
-                </p>
-
-                <p>
-                    But behind all the jokes,
-                    there is something I don't always say.
-                </p>
-
-                <p class="love">
-                    You are genuinely very important to me. ❤️
-                </p>
-
-                <p>
-                    I pray Allah keeps you happy,
-                    healthy and successful.
-                </p>
-
-                <p>
-                    May your life always be filled
-                    with peace, love and beautiful moments.
-                </p>
-
-                <p class="final">
-                    Happy Birthday, Apu. ❤️
-                </p>
-
-            </div>
-
-
-            <button onclick="nextScreen(6)">
+            <button onclick="finalSurprise()">
                 🎁 Final Surprise
             </button>
 
@@ -228,38 +201,50 @@
 
 
 
-    <!-- SCREEN 6 -->
+    <!-- ================= FINAL SCREEN ================= -->
 
-    <section class="screen final-screen hidden" id="screen6">
+    <section class="screen hidden" id="screen5">
 
-        <div class="card">
+        <div class="card final-card">
 
             <div class="big-heart">
                 ❤️
             </div>
 
             <h1>
-                HAPPY BIRTHDAY
+                Sagufta Apu
             </h1>
 
             <h2>
-                SAGUFTA APU 👑
+                You Are Irreplaceable.
             </h2>
 
             <p>
-                Stay happy.
-                Stay crazy.
-                Stay amazing.
+                We may fight.
             </p>
 
-            <p class="love">
-                And please...
-                don't stop annoying us. 😂❤️
+            <p>
+                We may annoy each other.
             </p>
 
-            <div class="signature">
+            <p>
+                And yes...
+                sometimes you are VERY annoying. 😂
+            </p>
+
+            <p class="love-text">
+                But no matter what,
+                you will always be
+                my special sister. ❤️
+            </p>
+
+            <p class="final-message">
+                HAPPY BIRTHDAY, APU! 🎂❤️
+            </p>
+
+            <p class="signature">
                 — Your annoying little brother 😎
-            </div>
+            </p>
 
         </div>
 
