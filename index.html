@@ -13,14 +13,20 @@
 <body>
 
     <!-- Background Music -->
-    <audio id="bgMusic" loop>
-        <source src="music/birthday.mp3" type="audio/mpeg">
+    <audio id="bgMusic" loop preload="auto">
+        <source src="birthday.m4a" type="audio/mp4">
     </audio>
 
-    <div id="hearts"></div>
+    <!-- Click Transition Overlay -->
+    <div id="transition"></div>
+
+    <!-- Effects Container -->
+    <div id="effects"></div>
 
 
-    <!-- SCREEN 1 : INTRO -->
+    <!-- =========================
+         SCREEN 1
+    ========================== -->
 
     <section class="screen" id="screen1">
 
@@ -35,14 +41,17 @@
             <h1>STOP! 😂</h1>
 
             <p>
-                This website is definitely NOT for you.
+                This website is definitely
+                <b>NOT</b> for you.
             </p>
 
             <p class="small">
                 Unless your name is...
             </p>
 
-            <h2>Sagufta Apu 👀</h2>
+            <h2>
+                Sagufta Apu 👀
+            </h2>
 
             <button onclick="goTo(2)">
                 Find Out 👀
@@ -53,8 +62,9 @@
     </section>
 
 
-
-    <!-- SCREEN 2 : FUNNY + PHOTO 1 -->
+    <!-- =========================
+         SCREEN 2
+    ========================== -->
 
     <section class="screen hidden" id="screen2">
 
@@ -66,12 +76,17 @@
                     alt="Sagufta Apu">
             </div>
 
-            <div class="emoji">😂👑</div>
+            <div class="emoji">
+                😂👑
+            </div>
 
-            <h1>GOTCHA!</h1>
+            <h1>
+                GOTCHA!
+            </h1>
 
             <p>
-                Yes Apu... this whole website
+                Yes Apu...
+                this whole website
                 is actually for YOU! 😂
             </p>
 
@@ -94,8 +109,9 @@
     </section>
 
 
-
-    <!-- SCREEN 3 : LOVE + PHOTO 2 -->
+    <!-- =========================
+         SCREEN 3
+    ========================== -->
 
     <section class="screen hidden" id="screen3">
 
@@ -111,7 +127,9 @@
                 🥹❤️
             </div>
 
-            <h1>Jokes Apart...</h1>
+            <h1>
+                Jokes Apart...
+            </h1>
 
             <p>
                 We may fight.
@@ -123,12 +141,14 @@
 
             <p>
                 And yes...
-                sometimes you are REALLY annoying. 😂
+                sometimes you are
+                <b>REALLY</b> annoying. 😂
             </p>
 
             <p class="love-text">
                 But behind all the jokes,
-                you are someone very special to me. ❤️
+                you are someone very special
+                to me. ❤️
             </p>
 
             <p>
@@ -145,8 +165,9 @@
     </section>
 
 
-
-    <!-- SCREEN 4 : BIRTHDAY + PHOTO 3 -->
+    <!-- =========================
+         SCREEN 4
+    ========================== -->
 
     <section class="screen hidden" id="screen4">
 
@@ -196,8 +217,9 @@
     </section>
 
 
-
-    <!-- SCREEN 5 : FINAL EMOTION -->
+    <!-- =========================
+         SCREEN 5
+    ========================== -->
 
     <section class="screen hidden" id="screen5">
 
